@@ -86,7 +86,7 @@
 			children = (
 				5CE1768A2CD37C3D00D50DDE /* AppDelegate.swift */,
 				5CE1768C2CD37C3D00D50DDE /* SceneDelegate.swift */,
-				5CE176C92CD7699500D50DDE /* Utilities */,
+				5CE176C92CD7699500D50DDE /* Utilities&Services&Managers */,
 				5CE176C62CD768E200D50DDE /* Model */,
 				5CE176C72CD7690100D50DDE /* View */,
 				5CE176C82CD7691900D50DDE /* ViewModel */,
@@ -102,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				5CE176B02CD7632900D50DDE /* Video.swift */,
-				5CE176B22CD7635B00D50DDE /* NetworkError.swift */,
 				5CE176B62CD763AD00D50DDE /* FavoriteVideo.swift */,
+				5CE176B22CD7635B00D50DDE /* NetworkError.swift */,
 				5CE176D02CD9D78A00D50DDE /* FavoriteError.swift */,
 			);
 			path = Model;
@@ -125,20 +125,20 @@
 			children = (
 				5CE176AC2CD7620F00D50DDE /* VideoListViewModel.swift */,
 				5CE176CE2CD9D4EC00D50DDE /* FavoriteVideosViewModel.swift */,
-				5CE176BD2CD7643300D50DDE /* FavoriteManager.swift */,
-				5CE176BB2CD7640200D50DDE /* FavoriteManagerProvider.swift */,
-				5CE176B82CD763E000D50DDE /* LocalFavoriteManager.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		5CE176C92CD7699500D50DDE /* Utilities */ = {
+		5CE176C92CD7699500D50DDE /* Utilities&Services&Managers */ = {
 			isa = PBXGroup;
 			children = (
 				5CE176AA2CD761ED00D50DDE /* Observable.swift */,
 				5CE176B42CD7638500D50DDE /* NetworkManager.swift */,
+				5CE176BD2CD7643300D50DDE /* FavoriteManager.swift */,
+				5CE176B82CD763E000D50DDE /* LocalFavoriteManager.swift */,
+				5CE176BB2CD7640200D50DDE /* FavoriteManagerProvider.swift */,
 			);
-			path = Utilities;
+			path = "Utilities&Services&Managers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

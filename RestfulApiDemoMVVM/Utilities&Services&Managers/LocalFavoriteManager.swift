@@ -26,10 +26,10 @@ class LocalFavoriteManager: FavoriteManageable {
                     if self?.saveFavorites(favorites) == true {
                         completion(.success(video))
                     } else {
-                        completion(.failure(LocalStorageError.saveFailed))
+                        completion(.failure(FavoriteError.saveFailed))
                     }
                 } else {
-                    completion(.failure(LocalStorageError.alreadyExists))
+                    completion(.failure(FavoriteError.alreadyExists))
                 }
             case .failure(let error):
                 completion(.failure(error))
@@ -46,10 +46,10 @@ class LocalFavoriteManager: FavoriteManageable {
                     if self?.saveFavorites(favorites) == true {
                         completion(.success(video))
                     } else {
-                        completion(.failure(LocalStorageError.saveFailed))
+                        completion(.failure(FavoriteError.saveFailed))
                     }
                 } else {
-                    completion(.failure(LocalStorageError.notFound))
+                    completion(.failure(FavoriteError.notFound))
                 }
             case .failure(let error):
                 completion(.failure(error))
@@ -66,10 +66,10 @@ class LocalFavoriteManager: FavoriteManageable {
                     if self?.saveFavorites(favorites) == true {
                         completion(.success(()))
                     } else {
-                        completion(.failure(LocalStorageError.saveFailed))
+                        completion(.failure(FavoriteError.saveFailed))
                     }
                 } else {
-                    completion(.failure(LocalStorageError.notFound))
+                    completion(.failure(FavoriteError.notFound))
                 }
             case .failure(let error):
                 completion(.failure(error))

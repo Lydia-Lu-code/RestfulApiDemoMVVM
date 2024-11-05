@@ -124,16 +124,7 @@ extension VideoViewController {
     }
 }
 
-// MARK: - TableView DataSource
-extension VideoViewController {
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 106
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
-    }
-}
+
 
 // MARK: - TableView Methods
 extension VideoViewController: UITableViewDelegate, UITableViewDataSource {

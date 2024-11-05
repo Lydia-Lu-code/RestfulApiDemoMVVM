@@ -27,21 +27,3 @@ protocol FavoriteManageable {
     func deleteFavorite(id: String, completion: @escaping (Result<Void, Error>) -> Void)
 }
 
-// MARK: - Errors
-enum LocalStorageError: LocalizedError {
-    case saveFailed
-    case notFound
-    case alreadyExists
-    
-    var errorDescription: String? {
-        switch self {
-        case .saveFailed:
-            return "無法保存數據"
-        case .notFound:
-            return "找不到指定的收藏"
-        case .alreadyExists:
-            return "該影片已經收藏"
-        }
-    }
-}
-
