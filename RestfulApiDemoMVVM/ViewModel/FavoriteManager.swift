@@ -1,10 +1,4 @@
-//
-//  FavoriteManager.swift
-//  RestfulApiDemoMVVM
-//
-//  Created by Lydia Lu on 2024/11/3.
-//
-
+// MARK: - FavoriteManager.swift
 import Foundation
 
 // MARK: - Network FavoriteManager

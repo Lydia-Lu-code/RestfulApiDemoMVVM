@@ -1,10 +1,3 @@
-//
-//  LocalFavoriteManager.swift
-//  RestfulApiDemoMVVM
-//
-//  Created by Lydia Lu on 2024/11/3.
-//
-
 import Foundation
 
 // MARK: - Local FavoriteManager
@@ -92,3 +85,4 @@ class LocalFavoriteManager: FavoriteManageable {
         return false
     }
 }
+

@@ -1,10 +1,3 @@
-//
-//  NetworkManager.swift
-//  RestfulApiDemoMVC
-//
-//  Created by Lydia Lu on 2024/10/31.
-//
-
 import Foundation
 
 // MARK: - HTTPMethod.swift
@@ -158,4 +151,3 @@ extension NetworkManager {
         performRequestWithoutResponse(endpoint: endpoint, method: .delete, completion: completion)
     }
 }
-

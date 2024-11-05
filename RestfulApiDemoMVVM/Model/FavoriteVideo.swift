@@ -3,7 +3,8 @@ import Foundation
 
 // MARK: - Models
 struct FavoriteVideo: Codable {
-    let id: String
+    let id: String?
+    
     var title: String
     var description: String
     let thumbnailURL: String
@@ -43,5 +44,4 @@ enum LocalStorageError: LocalizedError {
         }
     }
 }
-
 

@@ -1,18 +1,16 @@
-//
-//  VideoListViewModel.swift
-//  RestfulApiDemoMVVM
-//
-//  Created by Lydia Lu on 2024/11/3.
-//
-
 import Foundation
 
-// MARK: - VideoListViewModel.swift
 class VideoListViewModel {
     // MARK: - Properties
     private(set) var videos = Observable<[Video]>([])
     private(set) var error = Observable<String?>(nil)
     private(set) var isLoading = Observable<Bool>(false)
+    private let favoriteManager: FavoriteManageable
+    
+    // MARK: - Initialization
+    init(favoriteManager: FavoriteManageable = FavoriteManagerProvider.shared.favoriteManager) {
+        self.favoriteManager = favoriteManager
+    }
     
     // MARK: - Methods
     func fetchVideos() {
@@ -32,17 +30,16 @@ class VideoListViewModel {
         }
     }
     
-    func addToFavorites(video: Video, note: String?, completion: @escaping (Result<Void, Error>) -> Void) {
-        let favoriteVideo = FavoriteVideo(from: video, note: note)
+    func addToFavorites(at index: Int, note: String?, completion: @escaping (Result<Void, Error>) -> Void) {
+        guard let video = getVideo(at: index) else {
+            completion(.failure(FavoriteError.invalidData))
+            return
+        }
         
-        LocalFavoriteManager.shared.addToFavorites(favoriteVideo) { result in
+        let favoriteVideo = FavoriteVideo(from: video, note: note)
+        favoriteManager.addToFavorites(favoriteVideo) { result in
             DispatchQueue.main.async {
-                switch result {
-                case .success:
-                    completion(.success(()))
-                case .failure(let error):
-                    completion(.failure(error))
-                }
+                completion(result.map { _ in () })
             }
         }
     }
@@ -52,3 +49,4 @@ class VideoListViewModel {
         return videos.value[index]
     }
 }
+

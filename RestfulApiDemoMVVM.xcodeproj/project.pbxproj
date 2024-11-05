@@ -23,6 +23,10 @@
 		5CE176B92CD763E000D50DDE /* LocalFavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176B82CD763E000D50DDE /* LocalFavoriteManager.swift */; };
 		5CE176BC2CD7640200D50DDE /* FavoriteManagerProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176BB2CD7640200D50DDE /* FavoriteManagerProvider.swift */; };
 		5CE176BE2CD7643300D50DDE /* FavoriteManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176BD2CD7643300D50DDE /* FavoriteManager.swift */; };
+		5CE176CB2CD933C600D50DDE /* FavoriteVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176CA2CD933C600D50DDE /* FavoriteVideosViewController.swift */; };
+		5CE176CD2CD933F000D50DDE /* FavoriteVideoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176CC2CD933F000D50DDE /* FavoriteVideoCell.swift */; };
+		5CE176CF2CD9D4EC00D50DDE /* FavoriteVideosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176CE2CD9D4EC00D50DDE /* FavoriteVideosViewModel.swift */; };
+		5CE176D12CD9D78A00D50DDE /* FavoriteError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE176D02CD9D78A00D50DDE /* FavoriteError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +48,10 @@
 		5CE176B82CD763E000D50DDE /* LocalFavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFavoriteManager.swift; sourceTree = "<group>"; };
 		5CE176BB2CD7640200D50DDE /* FavoriteManagerProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManagerProvider.swift; sourceTree = "<group>"; };
 		5CE176BD2CD7643300D50DDE /* FavoriteManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteManager.swift; sourceTree = "<group>"; };
+		5CE176CA2CD933C600D50DDE /* FavoriteVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideosViewController.swift; sourceTree = "<group>"; };
+		5CE176CC2CD933F000D50DDE /* FavoriteVideoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideoCell.swift; sourceTree = "<group>"; };
+		5CE176CE2CD9D4EC00D50DDE /* FavoriteVideosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteVideosViewModel.swift; sourceTree = "<group>"; };
+		5CE176D02CD9D78A00D50DDE /* FavoriteError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +104,7 @@
 				5CE176B02CD7632900D50DDE /* Video.swift */,
 				5CE176B22CD7635B00D50DDE /* NetworkError.swift */,
 				5CE176B62CD763AD00D50DDE /* FavoriteVideo.swift */,
+				5CE176D02CD9D78A00D50DDE /* FavoriteError.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -104,7 +113,9 @@
 			isa = PBXGroup;
 			children = (
 				5CE1768E2CD37C3D00D50DDE /* VideoViewController.swift */,
+				5CE176CA2CD933C600D50DDE /* FavoriteVideosViewController.swift */,
 				5CE176AE2CD762E200D50DDE /* VideoTableViewCell.swift */,
+				5CE176CC2CD933F000D50DDE /* FavoriteVideoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				5CE176AC2CD7620F00D50DDE /* VideoListViewModel.swift */,
+				5CE176CE2CD9D4EC00D50DDE /* FavoriteVideosViewModel.swift */,
 				5CE176BD2CD7643300D50DDE /* FavoriteManager.swift */,
 				5CE176BB2CD7640200D50DDE /* FavoriteManagerProvider.swift */,
 				5CE176B82CD763E000D50DDE /* LocalFavoriteManager.swift */,
@@ -202,16 +214,20 @@
 			files = (
 				5CE176B52CD7638500D50DDE /* NetworkManager.swift in Sources */,
 				5CE176B92CD763E000D50DDE /* LocalFavoriteManager.swift in Sources */,
+				5CE176CD2CD933F000D50DDE /* FavoriteVideoCell.swift in Sources */,
 				5CE176BC2CD7640200D50DDE /* FavoriteManagerProvider.swift in Sources */,
 				5CE176AB2CD761ED00D50DDE /* Observable.swift in Sources */,
 				5CE176B32CD7635B00D50DDE /* NetworkError.swift in Sources */,
+				5CE176D12CD9D78A00D50DDE /* FavoriteError.swift in Sources */,
 				5CE1768F2CD37C3D00D50DDE /* VideoViewController.swift in Sources */,
+				5CE176CB2CD933C600D50DDE /* FavoriteVideosViewController.swift in Sources */,
 				5CE1768B2CD37C3D00D50DDE /* AppDelegate.swift in Sources */,
 				5CE176AD2CD7620F00D50DDE /* VideoListViewModel.swift in Sources */,
 				5CE1768D2CD37C3D00D50DDE /* SceneDelegate.swift in Sources */,
 				5CE176B72CD763AD00D50DDE /* FavoriteVideo.swift in Sources */,
 				5CE176BE2CD7643300D50DDE /* FavoriteManager.swift in Sources */,
 				5CE176B12CD7632900D50DDE /* Video.swift in Sources */,
+				5CE176CF2CD9D4EC00D50DDE /* FavoriteVideosViewModel.swift in Sources */,
 				5CE176AF2CD762E200D50DDE /* VideoTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

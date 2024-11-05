@@ -1,10 +1,3 @@
-//
-//  NetworkError.swift
-//  RestfulApiDemoMVC
-//
-//  Created by Lydia Lu on 2024/10/31.
-//
-
 import Foundation
 
 // MARK: - NetworkError.swift
@@ -33,3 +26,4 @@ enum NetworkError: Error {
         }
     }
 }
+
